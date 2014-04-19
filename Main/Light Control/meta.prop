@@ -1,0 +1,3 @@
+meta.name: Light Control
+meta.author: Guillaume GOESSEL
+meta.description: A remote to control my bed's light (with a Raspberry PI)

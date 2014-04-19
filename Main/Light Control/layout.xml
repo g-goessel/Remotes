@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  scroll = "none">
+    <row>
+        <slider text="Red" ProgressMax="4095" onChange="Red_change" />
+    </row>
+    <row>
+        <slider text="Green" ProgressMax="4095" onChange="Green_change" />
+    </row>
+    <row>
+        <slider text="Blue" ProgressMax="4095" onChange="Blue_change" />
+    </row>
+</layout>
