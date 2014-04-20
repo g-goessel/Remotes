@@ -1,12 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout  scroll = "none">
-    <row>
-        <slider text="Red" ProgressMax="4095" onChange="Red_change" />
-    </row>
-    <row>
-        <slider text="Green" ProgressMax="4095" onChange="Green_change" />
-    </row>
-    <row>
-        <slider text="Blue" ProgressMax="4095" onChange="Blue_change" />
-    </row>
+    <tabs>
+        <tab text="Sliders">
+            <row>
+                <slider text="Brightness" ProgressMax="1000" onChange="Brightness_change" onUp="Apply_colors" progress="500"/>
+            </row>
+            <row>
+                <slider id="red_progress_bar" text="Red" ProgressMax="4095" onChange="Red_change" onUp="Apply_colors" progress="4095" />
+            </row>
+            <row>
+                <slider id="green_progress_bar" text="Green" ProgressMax="4095" onChange="Green_change" onUp="Apply_colors" progress="4095" />
+            </row>
+            <row>
+                <slider id="blue_progress_bar" text="Blue" ProgressMax="4095" onChange="Blue_change" onUp="Apply_colors" progress="4095"/>
+            </row>
+            <row>
+                <button text="White" onTap="White" />
+                <button text="Black" onTap="Black" />
+            </row>
+        </tab>
+        
+        <tab text="Colors">
+            <row>
+                <slider text="Brightness" ProgressMax="1000" onChange="Brightness_change" onUp="Apply_colors" progress="500"/>
+            </row>
+            <row>
+                <button text="Red" onTap="Red" />
+                <button text="Green" onTap="Green" />
+                <button text="Blue" onTap="Blue" />
+            </row>
+            <row>
+                <button text="Magenta" onTap="Magenta" />
+                <button text="Yellow" onTap="Yellow" />
+                <button text="Cyan" onTap="Cyan" />
+            </row>
+            <row>
+                <button text="White" onTap="White" />
+                <button text="Black" onTap="Black" />
+            </row>
+        </tab>
+    </tabs>
 </layout>
